@@ -56,7 +56,7 @@ if ($_SESSION['usuarioNome'] == '') {
                                     require("connections/conn.php");
 
                                     $pegaid = (int)$_GET['id'];
-                                    $sql = "select id,nome,email,perfil,datacadastro FROM usuarios where id = '$pegaid'";
+                                    $sql = "select id,nome,email FROM usuarios where id = '$pegaid'";
                                     $result = mysqli_query($conn, $sql);
 
                                     while ($row = mysqli_fetch_assoc($result)) {
@@ -77,20 +77,7 @@ if ($_SESSION['usuarioNome'] == '') {
                                                    id='example-text-input'>";
                                         echo "</div>";
                                         echo "</div>";
-                                        echo "<div class='form-group row'>";
-                                        echo "<label for='example-text-input' class='col-sm-2 col-form-label'>Perfil</label>";
-                                        echo "<div class='col-sm-10'>";
-                                        echo "<input class='form-control' name='perfil' type='text' value='$row[perfil]'
-                                                   id='example-text-input' readonly='true'>";
-                                        echo "</div>";
-                                        echo "</div>";
-                                        echo "<div class='form-group row'>";
-                                        echo "<label for='example-text-input' class='col-sm-2 col-form-label'>Data de cadastro</label>";
-                                        echo "<div class='col-sm-10'>";
-                                        echo "<input class='form-control' name='datacadastro' type='text' value='$row[datacadastro]'
-                                                   id='example-text-input' readonly='true'>";
-                                        echo "</div>";
-                                        echo "</div>";
+
 
 
                                     }

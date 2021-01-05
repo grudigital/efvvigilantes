@@ -3,7 +3,7 @@
 $servidor = "localhost";
 $usuario = "root";
 $senha = "";
-$dbname = "managershop";
+$dbname = "efvvigilantes";
 
 $conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
 

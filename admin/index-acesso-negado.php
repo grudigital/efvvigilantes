@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <title>Manager Shop - Portal do fornecedor </title>
+    <title>EFV Vigilantes - Escola Feirense de Formação de Vigilantes LTDA.</title>
     <meta content="Admin Dashboard" name="description" />
     <meta content="Agencia Grudigital" name="author" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -34,7 +34,7 @@
         <div class="card-body">
 
             <h3 class="text-center m-0">
-                <a href="index.php" class="logo logo-admin"><img src="assets/images/logo.png" height="40" alt="logo"></a>
+                <a href="index.php" class="logo logo-admin"><img src="assets/images/logo.png" width="180" alt="logo"></a>
             </h3>
 
             <div class="p-3">
@@ -70,7 +70,7 @@
     </div>
 
     <div class="m-t-40 text-center">
-        <p class="text-white">© 2020 Manager Shop. Desenvolvido com <i class="mdi mdi-heart text-danger"></i> por Grudigital</p>
+        <p class="text-white">© 2021 EFV Vigilantes. Desenvolvido com <i class="mdi mdi-heart text-danger"></i> por Grudigital</p>
     </div>
 
 </div>

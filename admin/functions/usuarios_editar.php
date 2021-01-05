@@ -2,8 +2,7 @@
 $id = intval($_REQUEST['id']);
 $nome = $_REQUEST['nome'];
 $email = $_REQUEST['email'];
-$perfil = $_REQUEST['perfil'];
-$datacadastro = $_REQUEST['datacadastro'];
+
 
 require("../connections/conn.php");
 $sql = "update usuarios set nome='$nome',email='$email' where id=$id";

@@ -71,17 +71,7 @@ if ($_SESSION['usuarioNome'] == '') {
                                                    id="example-text-input">
                                         </div>
                                     </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Perfil</label>
-                                        <div class="col-sm-10">
-                                            <select name="perfil" class="custom-select">
-                                                <option value="1" selected>Administrador</option>
-                                                <option value="2">Vendedor</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <input class="form-control" name="datacadastro" type="hidden"
-                                           id="example-text-input">
+
 
                                     <div class="form-group row">
                                         <div class="col-sm-12">
