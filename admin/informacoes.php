@@ -91,6 +91,13 @@ if ($_SESSION['usuarioNome'] == '') {
                                         echo "</div>";
                                         echo "</div>";
                                         echo "<div class='form-group row'>";
+                                        echo "<label for='example-text-input' class='col-sm-2 col-form-label'>Bairro</label>";
+                                        echo "<div class='col-sm-10'>";
+                                        echo "<input class='form-control' name='bairro' type='text' value='$row[bairro]'
+                                                   id='example-text-input'>";
+                                        echo "</div>";
+                                        echo "</div>";
+                                        echo "<div class='form-group row'>";
                                         echo "<label for='example-text-input' class='col-sm-2 col-form-label'>Cidade</label>";
                                         echo "<div class='col-sm-10'>";
                                         echo "<input class='form-control' name='cidade' type='text' value='$row[cidade]'
@@ -139,6 +146,23 @@ if ($_SESSION['usuarioNome'] == '') {
                                                    id='example-text-input'>";
                                         echo "</div>";
                                         echo "</div>";
+
+                                        echo "<div class='form-group row'>";
+                                        echo "<label for='example-text-input' class='col-sm-2 col-form-label'>Facebook</label>";
+                                        echo "<div class='col-sm-10'>";
+                                        echo "<input class='form-control' name='facebook' type='text' value='$row[facebook]'
+                                                   id='example-text-input'>";
+                                        echo "</div>";
+                                        echo "</div>";
+
+                                        echo "<div class='form-group row'>";
+                                        echo "<label for='example-text-input' class='col-sm-2 col-form-label'>Instagram</label>";
+                                        echo "<div class='col-sm-10'>";
+                                        echo "<input class='form-control' name='instagram' type='text' value='$row[instagram]'
+                                                   id='example-text-input'>";
+                                        echo "</div>";
+                                        echo "</div>";
+
                                     }
                                     mysqli_close($conn);
                                     ?>

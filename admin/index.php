@@ -51,36 +51,29 @@ if ($_SESSION['usuarioNome'] == '') {
                     echo "<div class='mini-stat clearfix bg-white'>";
                     echo "<span class='mini-stat-icon bg-blue-grey mr-0 float-right'><i class='mdi mdi-basket'></i></span>";
 
-                    $sqlprodutos = "SELECT * FROM produtos";
+                    $sqlprodutos = "SELECT * FROM alunos";
                     $executa_query_produtos = mysqli_query($conn, $sqlprodutos);
                     $conta_linhas_produtos = mysqli_num_rows($executa_query_produtos);
 
-                    $sqlprodutos7dias = "select * from produtos where date(datacadastro) > (NOW() - INTERVAL 7 DAY)";
-                    $executa_query_produtos_7dias = mysqli_query($conn, $sqlprodutos7dias);
-                    $conta_linhas_produtos_7dias = mysqli_num_rows($executa_query_produtos_7dias);
+
 
                     echo "<div style='font-size: 15px' class='mini-stat-info'>";
-                    echo "<span style='font-size: 15px' class='counter text-blue-grey'>$conta_linhas_produtos produtos</span>";
+                    echo "<span style='font-size: 15px' class='counter text-blue-grey'>$conta_linhas_produtos alunos</span>";
                     echo "cadastrados";
-                    echo "</div>";
-                    echo "<div class='clearfix'></div>";
-                    echo "<p class='mb-0 m-t-20 text-muted'>Últimos 7 dias: $conta_linhas_produtos_7dias <span class='pull-right'></span></p>";
                     echo "</div>";
                     echo "</div>";
                     echo "<div class='col-md-6 col-xl-3'>";
                     echo "<div class='mini-stat clearfix bg-white'>";
                     echo "<span class='mini-stat-icon bg-blue-grey mr-0 float-right'><i class='mdi mdi-black-mesa'></i></span>";
 
-                    $sqlfornecedores = "SELECT * FROM fornecedores";
+                    $sqlfornecedores = "SELECT * FROM certificados";
                     $executa_query_fornecedores = mysqli_query($conn, $sqlfornecedores);
                     $conta_linhas_fornecedores = mysqli_num_rows($executa_query_fornecedores);
 
-                    $sqlfornecedores7dias = "select * from fornecedores where date(datacriacao) > (NOW() - INTERVAL 7 DAY)";
-                    $executa_query_fornecedores_7dias = mysqli_query($conn, $sqlfornecedores7dias);
-                    $conta_linhas_fornecedores_7dias = mysqli_num_rows($executa_query_fornecedores_7dias);
+
 
                     echo "<div style='font-size: 15px' class='mini-stat-info'>";
-                    echo "<span style='font-size: 15px' class='counter text-blue-grey'>$conta_linhas_fornecedores fornecedores</span>";
+                    echo "<span style='font-size: 15px' class='counter text-blue-grey'>$conta_linhas_fornecedores certificados</span>";
                     echo "cadastrados";
                     echo "</div>";
                     echo "<div class='clearfix'></div>";

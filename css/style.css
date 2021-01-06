@@ -88,7 +88,7 @@ a.button_intro, .button_intro  {
 	font-family: inherit;
 	font-size: inherit;
 	color:#fff !important;
-	background:#FF3333;
+	background:#647631;
 	cursor: pointer;
 	padding: 12px 35px;
 	display: inline-block;
@@ -146,7 +146,7 @@ a.btn_1.medium, .btn_1.medium  {
 	font-size:14px;
 }
 a.btn_1:hover, .btn_1:hover {
-	background: #FF3333;
+	background: #647631;
 }
 a.btn_quote{
 	border: none;
@@ -202,7 +202,7 @@ a.btn_full, .btn_full{
 	margin-bottom:10px;
 }
 a.btn_full:hover, .btn_full:hover{
-	background: #FF3333;
+	background: #647631;
 }
 a.btn_contact, .btn_contact{
 	border: none;
@@ -210,7 +210,7 @@ a.btn_contact, .btn_contact{
 	font-size: inherit;
 	color:#fff;
 	width:100%;
-	background: #FF3333;
+	background: #647631;
 	cursor: pointer;
 	padding: 12px 20px;
 	display: inline-block;
@@ -241,7 +241,7 @@ a#phone_top {
 	position: relative;
 	font-weight: 600;
 	margin-right: 10px;
-    color: #FF3333!important;
+    color: #647631!important;
     padding-left: 22px;
 }
 a#phone_top:hover {
@@ -315,7 +315,7 @@ ul#top_links a{
 	color:#555;
 }
 ul#top_links a:hover{
-	color:#FF3333;
+	color:#647631;
 }
 /*Animate Sticky header*/
 .animated {
@@ -777,7 +777,7 @@ footer ul{
 }
 #social_footer ul li a:hover{
 	background:#fff;
-	color:#FF3333;
+	color:#647631;
 }
 #contact_bg{
 	background:url(../img/map_footer.png) no-repeat bottom center;
@@ -802,7 +802,7 @@ ul#contact_details_footer li#address_footer, ul#contact_details_footer li#phone_
 	 font-size:20px;
   	left:0;
   	top:-5px;
-	color:#FF3333;
+	color:#647631;
 }
 #address_footer:before{
 	content: "\e009";
@@ -945,7 +945,7 @@ ul#contact_details_footer li#address_footer, ul#contact_details_footer li#phone_
 	margin:0 0 -15px 0;
 }
 .phone_feat a{
-	color:#FF3333;
+	color:#647631;
     font-weight: 700;
 }
 .phone_feat a:hover{
@@ -1040,7 +1040,7 @@ video {
     color:#fff;
 	width: 100%;
 	z-index:99;
-	border-bottom:3px solid #FF3333;
+	border-bottom:3px solid #647631;
 }
 #book {
 	background: rgba(0, 0, 0, 0.75);
@@ -1100,7 +1100,7 @@ ul.feat#about li i{
 	left:25px;
 	top:25px;
 	font-size:42px;
-	color:#FF3333;
+	color:#647631;
 }
 .promo_full_wp div h3 {
 	font-size: 48px;
@@ -1235,7 +1235,7 @@ ul.feat#about li i{
 	color: #fff;
 }
 .team-item-detail-inner .social li a:hover {
-	color: #FF3333;
+	color: #647631;
 }
 .team-item-info {
 	padding-top: 15px;
@@ -1312,7 +1312,7 @@ ul#cat_nav li a:before{
 	content: "\35";
 }
 img.img-responsive.border{
-	border-bottom:3px solid #FF3333;
+	border-bottom:3px solid #647631;
 }
 ul.feat{
 	list-style:none;
@@ -1343,7 +1343,7 @@ ul.feat li img{
 	margin-bottom:10px;
 }
 .form_title h3 strong{
-	background-color:#FF3333;
+	background-color:#647631;
 	text-align:center;
 	width:40px;
 	height:40px;
@@ -1455,7 +1455,7 @@ ul.stepy-titles { margin:0; padding:0;}
 .stepy-titles li:first-child {margin-left:0;}
 .stepy-titles li { cursor: pointer; float: left; padding: 7px 20px; background:#f3f3f3; font-weight:600; margin-bottom:2px;  margin-left:2px; position:relative; font-size:16px; }
 .stepy-titles li span { font-size:11px; display: block; font-weight:normal; }
-.stepy-titles .current-step { cursor: auto; background:#FF3333; padding: 7px 20px; color:#fff;}
+.stepy-titles .current-step { cursor: auto; background:#647631; padding: 7px 20px; color:#fff;}
 
 .form-control.error{ background:#fdf5f5}
 .stepy-error{ display:block;}
@@ -1482,7 +1482,7 @@ input[type="submit"].finish{
 	font-family: inherit;
 	font-size: inherit;
 	color:#fff;
-	background: #FF3333;
+	background: #647631;
 	cursor: pointer;
 	padding: 7px 20px;
 	display: inline-block;
@@ -1555,7 +1555,7 @@ input#website {display:none;}
 	margin-top: 0;
 }
 .box_quote h3 strong{
-	color: #FF3333;
+	color: #647631;
 	display: block;
 }
 .box_quote ul{
@@ -1576,7 +1576,7 @@ input#website {display:none;}
 	font-size: 20px;
 }
 a.call_us_bt{
-	background-color: #FF3333;
+	background-color: #647631;
 	color: #fff;
 	display: inline-block;
 	padding: 10px 15px;
@@ -1589,7 +1589,7 @@ a.call_us_bt{
 	background:#fafafa;
 	padding:25px;
 	margin-bottom:20px;
-	border-top: 3px solid #FF3333;
+	border-top: 3px solid #647631;
 } 
 .box_style_4 ul{
 	padding:0 0 0 25px;
@@ -1724,7 +1724,7 @@ ul.list_ok li:before {
   font-family: 'ElegantIcons';
   font-size:14px;
   content: "\4e";
-  color:#FF3333;
+  color:#647631;
   position:absolute;
   left:0;
   top:0;
@@ -1775,7 +1775,7 @@ ul.list_2 li:before {
   font-family: 'ElegantIcons';
   font-size:14px;
   content: "\5c";
-  color:#FF3333;
+  color:#647631;
   position:absolute;
   left:0;
   top:0;
@@ -1818,7 +1818,7 @@ ul.list_2 li:before {
 	font-weight:500;
 }
 .bg_content div a i{
-	color:#FF3333;
+	color:#647631;
 	font-size:60px;
 	-webkit-transition: all 0.5s ease;
 	transition: all 0.5s ease;
@@ -2300,7 +2300,7 @@ blockquote.styled{
 
 figure.animated {
 	overflow: hidden;
-	border-bottom: 3px solid #FF3333;
+	border-bottom: 3px solid #647631;
 }
 figure.animated a img{
 	-webkit-transform: scale(1);
@@ -2329,7 +2329,7 @@ figure.animated a:hover img{
 
 /*-------- Success submit --------*/
 body#confirmation {
-	background-color: #FF3333;
+	background-color: #647631;
 }
 #success {
   position: absolute;

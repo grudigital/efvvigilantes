@@ -13,7 +13,7 @@
 			
 /*First level styles */			
 .main-menu > ul > li > a {color: #333;padding: 0 12px 20px  12px; font-size:13px; text-transform:uppercase; font-weight: 600;}
-.main-menu > ul > li:hover > a {color: #FF3333;}
+.main-menu > ul > li:hover > a {color: #647631;}
 
 
 /* Opacity mask when left open */
@@ -73,7 +73,7 @@
 /* Submenu + megamenu*/
 .main-menu ul ul, .main-menu ul li .menu-wrapper {
 	position: absolute;
-	border-top: 2px solid #FF3333;
+	border-top: 2px solid #647631;
 	z-index: 1;
 	visibility: hidden;
 	left: 3px;
@@ -124,7 +124,7 @@
 .main-menu ul ul li a {font-size: 13px;color: #555;border-bottom:1px solid #ededed;display: block;}
 .main-menu ul ul li:last-child a {border-bottom:none;}
 
-.main-menu ul ul li:hover > a {background-color:#f3f3f3;color:#FF3333; padding-left:15px;}
+.main-menu ul ul li:hover > a {background-color:#f3f3f3;color:#647631; padding-left:15px;}
 
 /* Megamenu */
 .main-menu ul li.megamenu {position:static;}
@@ -138,7 +138,7 @@
 .main-menu ul ul ul{position: absolute;border-top: 0;z-index: 1;height: auto;left: 100%;top: 0;margin: 0;padding: 0;background: #fff;min-width:190px;-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);box-shadow: 0 6px 12px rgba(0, 0, 0, .175);}	
 
 /* Arrows top */
-.main-menu ul ul:before{bottom: 100%;left: 15%;border: solid transparent;content: " ";height: 0;width: 0;position: absolute;pointer-events: none;border-bottom-color: #FF3333;border-width: 7px;margin-left: -7px;}
+.main-menu ul ul:before{bottom: 100%;left: 15%;border: solid transparent;content: " ";height: 0;width: 0;position: absolute;pointer-events: none;border-bottom-color: #647631;border-width: 7px;margin-left: -7px;}
 
 /* Arrows top 3rd level*/
 .main-menu ul ul ul:before{border-width: 0;margin-left: 0;}
@@ -167,7 +167,7 @@ a.show-submenu-mega:focus{color:#e04f67 !important;background-color:#f3f3f3;}
 .main-menu a {display: block;color:#333 !important;}
 .main-menu li {position: relative;}
 	
-.main-menu a:hover {color:#FF3333 !important;}
+.main-menu a:hover {color:#647631 !important;}
 	
 .main-menu ul > li {padding-bottom: 0;}
 .main-menu ul > li i{float:right;}

@@ -2,117 +2,295 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccacfed2-7df7-45e5-8eba-75f2dc10a33b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/blocos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/blocos_adicionar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/blocos_editar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/blocos_imagem.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/cursos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/cursos_adicionar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/cursos_editar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/cursos_imagem.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/efvvigilantes.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/fotos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/functions/blocos_adicionar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/functions/blocos_editar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/functions/blocos_excluir.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/functions/blocos_imagem.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/functions/cursos_adicionar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/functions/cursos_editar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/functions/cursos_excluir.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/functions/cursos_imagem.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/functions/fotos_adicionar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/functions/fotos_excluir.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/functions/informacoes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/functions/publicacoes_adicionar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/functions/publicacoes_editar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/functions/publicacoes_excluir.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/functions/publicacoes_imagem.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/functions/seo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/functions/videos_adicionar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/functions/videos_excluir.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/includes/blocos-lista.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/includes/cursos-lista.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/includes/publicacoes-lista.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/informacoes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/publicacoes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/publicacoes_adicionar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/publicacoes_editar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/publicacoes_imagem.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/seo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/blocos/1609884724.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/cursos/1609884305.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/cursos/1609884726.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/cursos/1609884794.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/cursos/1609884863.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/cursos/1609884918.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/fotos/1609885580.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/fotos/1609885853.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/fotos/1609885860.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/fotos/1609886044.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/fotos/1609886077.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/fotos/1609886165.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/fotos/1609886177.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/fotos/1609886353.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/fotos/1609886361.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/fotos/1609886577.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/publicacoes/1609883412.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/publicacoes/1609883941.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/publicacoes/1609884235.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/publicacoes/1609884367.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/publicacoes/1609884533.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/videos.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/alunos.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/alunos_adicionar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/alunos_certificados.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/alunos_editar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/images/icone-certificado.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/avaliacoes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/avaliacoes_adicionar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/avaliacoes_editar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/avaliacoes_imagem.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/functions/alunos_adicionar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/functions/alunos_editar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/functions/alunos_excluir.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/functions/avaliacoes_adicionar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/functions/avaliacoes_editar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/functions/avaliacoes_excluir.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/functions/avaliacoes_imagem.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/functions/certificados_adicionar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/functions/certificados_excluir.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/includes/alunos-lista.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/includes/avaliacoes-lista.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/avaliacoes/1609958696.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/avaliacoes/1609958785.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/avaliacoes/1609958865.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/blocos/1609960167.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/certificados/1609944572.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/certificados/1609944790.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/certificados/1609944995.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/fotos/1609957178.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/fotos/1609957185.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/fotos/1609957191.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/fotos/1609957198.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/fotos/1609957206.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/fotos/1609957212.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/publicacoes/1609965341.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/publicacoes/aposentadoriavigilante.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contato.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curso.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cursos.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fotos.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/logorodape.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/topo-contato.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/topo-noticias.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/topo-quemsomos.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/head.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noticia.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noticias.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paginas/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paginas/accessories.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paginas/blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paginas/blog_post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paginas/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paginas/checkout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paginas/contacts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paginas/icon_pack_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paginas/icon_pack_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paginas/index2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paginas/index_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paginas/index_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paginas/quotation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paginas/quotation_wizard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paginas/service_layout_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paginas/services_layout_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paginas/services_layout_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paginas/shop-single.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paginas/shop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paginas/shortcodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/paginas/tips.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quemsomos.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/videos.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/assets/images/logo-sm.png" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/images/logo-sm.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/assets/scss/_menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/_menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/connections/conn.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/connections/conn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/functions/usuarios_adicionar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/functions/usuarios_adicionar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/functions/usuarios_editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/functions/usuarios_editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/functions/usuarios_excluir.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/functions/usuarios_excluir.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accessories.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/abrircaixa.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/abrircaixa_vendarealizada.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/armazenamento.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/armazenamento_adicionado.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/armazenamento_adicionar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/armazenamento_atualizado.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/armazenamento_editar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/armazenamento_excluido.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/images/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/images/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/barcode.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/caixa-produto-desconto-step3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/caixa-produto-desconto.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/clientes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/clientes_adicionado.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/clientes_adicionar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/clientes_compras.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/clientes_editar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/clientes_editar_atualizado.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/clientes_excluido.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/clientes_visualizar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/consultacliente.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/consultafornecedor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/consultaproduto.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/consultavendedor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/despesa.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/despesa_adicionada.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/despesa_adicionar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/devolucoes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/devolver_nota.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/devolver_nota2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/estoque.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/fornecedores.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/fornecedores_adicionado.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/fornecedores_adicionar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/fornecedores_editar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/fornecedores_editar_atualizado.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/fornecedores_excluido.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/fornecedores_imagem.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/fornecedores_vendas.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/fornecedores_visualizar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/armazenamento_adicionar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/armazenamento_editar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/armazenamento_excluir.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/caixa-retirar-step3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/caixa_retirar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/clientes_adicionar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/clientes_editar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/clientes_excluir.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/despesa_adicionar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/devolver_item.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/devolver_item2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/fornecedores_adicionar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/fornecedores_editar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/fornecedores_excluir.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/fornecedores_imagem.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/informacoes.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/functions/informacoes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/processar-venda.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/produtos_adicionar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/produtos_editar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/produtos_excluir.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/produtos_imagem.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/produtos_parametros_adicionar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/produtos_parametros_editar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/produtos_parametros_excluir.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/produtos_parametros_opcoes_adicionar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/produtos_parametros_opcoes_excluir.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/produtos_preferencias_editar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/produtos_tornar_disponivel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/sangria_adicionar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/teste.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/tipodespesa_adicionar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/tipodespesa_editar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/tipodespesa_excluir.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/venda-desconto-step3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/venda-desconto.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/venda-step1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/venda-step2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/vendasporcliente.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/vendasporfornecedor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/vendasporvendedor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/functions/vendedores_excluir.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/armazenamento-lista.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/caixa-listar-vendedor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/caixa-listar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/caixa-venda-item-step3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/caixa-venda-item.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/clientes-lista.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/despesas-listar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/devolucoes-lista.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/estoque-lista-meus-produtos-devolvidos.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/estoque-lista-meus-produtos-vendidos.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/estoque-lista-meus-produtos.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/estoque-lista.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/fornecedores-lista-2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/fornecedores-lista.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/includes/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/rodape.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/rodape.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/usuarios-lista.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/usuarios-lista.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index-acesso-negado.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index-acesso-negado.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/produtos-devolvidos-lista.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/produtos-excluidos-lista.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/produtos-fornecedor-lista.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/produtos-lista.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/produtos-parametros-lista.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/produtos-parametros-opcoes-lista.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/produtos-vendedor-lista.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/produtos-vendidos-lista.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/sangria-listar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/tipodespesa-listar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/vendas-listar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/vendas-realizadas-lista.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/managershop.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/managershop_23-12-21h29.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/fornecedores/1596309477.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/fornecedores/1596309487.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/fornecedores/1605466648.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/produtos/1597519792.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/produtos/1597519804.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/produtos/1597519814.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/produtos/1597760356.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/produtos/1597861047.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/produtos/1598026452.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/produtos/1598026498.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/produtos/1598026558.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/produtos/1598026593.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/produtos/1598026626.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/produtos/1598026690.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/produtos/1598026774.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/produtos/1598026850.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/produtos/1598031371.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/produtos/1598031662.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/produtos/1598032737.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/produtos/1598032973.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/produtos/1598033183.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/produtos/1608573316.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/produtos/1608573343.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/produtos/1608573826.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/produtos/1608648231.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/produtos/1608648239.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/produtos/1608648290.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/produtos/1608649916.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/produtos/1608740372.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/produtos/1608740405.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/produtos/1608764177.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/usuarios_adicionado.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/usuarios_adicionar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/usuarios_adicionar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/usuarios_editar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/usuarios_editar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/usuarios_excluido.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/informacoes.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/informacoes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/meus-produtos-devolvidos.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/meus-produtos-vendidos.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/meus-produtos.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/preferencias_editar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/produtos.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/produtos_adicionado.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/produtos_adicionar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/produtos_cadastrados_parametros.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/produtos_codigobarras.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/produtos_devolvidos.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/produtos_editado.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/produtos_editar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/produtos_excluidos.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/produtos_imagem.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/produtos_parametros.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/produtos_parametros_adicionado.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/produtos_parametros_adicionar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/produtos_parametros_atualizado.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/produtos_parametros_editar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/produtos_parametros_editar_atualizado.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/produtos_parametros_excluido.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/produtos_parametros_opcoes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/produtos_parametros_opcoes_adicionado.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/produtos_parametros_opcoes_adicionar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/produtos_visualizar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/produtos_visualizar2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/produtosvendidos.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/relatorio_contaspagar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/relatorio_entradassaidas.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/relatorio_entradassaidas_abril.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/relatorio_entradassaidas_agosto.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/relatorio_entradassaidas_dezembro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/relatorio_entradassaidas_fevereiro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/relatorio_entradassaidas_janeiro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/relatorio_entradassaidas_julho.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/relatorio_entradassaidas_junho.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/relatorio_entradassaidas_maio.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/relatorio_entradassaidas_marco.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/relatorio_entradassaidas_novembro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/relatorio_entradassaidas_outubro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/relatorio_entradassaidas_setembro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/relatorio_vendasporperiodo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/relatorio_vendasporperiodo_abril.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/relatorio_vendasporperiodo_agosto.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/relatorio_vendasporperiodo_dezembro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/relatorio_vendasporperiodo_fevereiro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/relatorio_vendasporperiodo_janeiro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/relatorio_vendasporperiodo_julho.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/relatorio_vendasporperiodo_junho.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/relatorio_vendasporperiodo_maio.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/relatorio_vendasporperiodo_marco.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/relatorio_vendasporperiodo_novembro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/relatorio_vendasporperiodo_outubro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/relatorio_vendasporperiodo_setembro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/sangria.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/sangria_adicionada.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/sangria_adicionar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/tipodespesa.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/tipodespesa_adicionar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/tipodespesa_editar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uploads/publicacoes/1609883412.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uploads/publicacoes/1609883941.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uploads/publicacoes/1609883941.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uploads/publicacoes/1609884367.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uploads/publicacoes/1609884367.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uploads/publicacoes/1609884533.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uploads/publicacoes/1609884533.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/venda.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/venda_adicionar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/venda_step2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/venda_step3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/venda_step4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/vendasporcliente.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/vendasporfornecedor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/vendasporvendedor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/vendasrealizadas.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog_post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coming_soon/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/coming_soon/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contacts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/shop.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icon_pack_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icon_pack_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/promo_bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/promo_bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_icons/clipboard.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/svg_icons/clipboard.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_icons/microphone.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/svg_icons/microphone.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_icons/mobile.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/svg_icons/mobile.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_icons/settings.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/svg_icons/settings.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_icons/shield.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/svg_icons/shield.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_icons/video-camera.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/svg_icons/video-camera.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quotation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/quotation_wizard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service_layout_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services_layout_2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services_layout_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-single.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shortcodes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tips.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +327,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609879748354</updated>
-      <workItem from="1609879755097" duration="8004000" />
+      <workItem from="1609879755097" duration="8067000" />
+      <workItem from="1609941977842" duration="21293000" />
     </task>
     <task id="LOCAL-00001" summary="@felipesergio projeto inicial">
       <created>1609880060140</created>
@@ -158,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609880060140</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="@felipesergio admin faltando apenas certificados.">
+      <created>1609887822992</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609887822992</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +353,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="@felipesergio projeto inicial" />
-    <option name="LAST_COMMIT_MESSAGE" value="@felipesergio projeto inicial" />
+    <MESSAGE value="@felipesergio admin faltando apenas certificados." />
+    <option name="LAST_COMMIT_MESSAGE" value="@felipesergio admin faltando apenas certificados." />
   </component>
 </project>
