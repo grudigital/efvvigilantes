@@ -31,6 +31,9 @@ if ($_SESSION['usuarioNome'] == '') {
                     <div class="clearfix"></div>
                 </nav>
             </div>
+
+
+
             <div class="page-content-wrapper">
                 <div class="container-fluid">
                     <div class="row">
@@ -52,10 +55,14 @@ if ($_SESSION['usuarioNome'] == '') {
                                                 ?>
                                                 <p class="text-muted m-b-30 font-14">Listagem de certificados</p>
                                             </div>
-                                            <div class="col-6"></div>
-                                            <div class="col-2"></div>
+                                            <div class="col-4"></div>
+                                            <div class="col-2"><button style="width: 100%" type='button' class='btn btn-success'>Notif. e-mail</button></div>
+                                            <div class="col-2"><button style="width: 100%" type='button' class='btn btn-success'>Notif. whats</button></div>
                                         </div>
                                     </div>
+
+
+
 
                                     <div class="row">
                                         <div class="col-12">

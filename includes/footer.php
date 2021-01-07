@@ -96,7 +96,7 @@
 
     <div id="copy">
         <div class="container">
-            © EFV Vigilantes - Todos os direitos reservados. Desenvolvido por: <a target="_blank"
+            © EFV Vigilantes - Todos os direitos reservados. Desenvolvido por: <a style="font-weight: bold" target="_blank"
                                                                                   href="https://www.grudigital.com.br">
                 Agência Grudigital </a>
         </div>

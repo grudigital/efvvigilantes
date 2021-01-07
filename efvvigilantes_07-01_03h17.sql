@@ -2,10 +2,10 @@
 -- version 5.0.3
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Tempo de geração: 06-Jan-2021 às 22:06
+-- Host: localhost
+-- Tempo de geração: 07/01/2021 às 07:12
 -- Versão do servidor: 10.4.14-MariaDB
--- versão do PHP: 7.2.34
+-- Versão do PHP: 7.2.34
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `alunos`
+-- Estrutura para tabela `alunos`
 --
 
 CREATE TABLE `alunos` (
@@ -36,17 +36,17 @@ CREATE TABLE `alunos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Extraindo dados da tabela `alunos`
+-- Despejando dados para a tabela `alunos`
 --
 
 INSERT INTO `alunos` (`id`, `nome`, `cpf`, `email`, `whatsapp`) VALUES
-(2, 'felipe', '352.516.908-61', 'felipe@grudigital.com.br', '(11) 93093-7007'),
-(3, 'Lourival ', '353.535.353-34', 'felipe@grudigital.com.br', '(11) 11111-1111');
+(2, 'Felipe Sergio', '352.516.908-60', 'felipe@grudigital.com.br', '(11) 93093-7007'),
+(3, 'Lourival ', '353.535.353-34', 'felipe@grudigital.com.br', '11980246313');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `avaliacoes`
+-- Estrutura para tabela `avaliacoes`
 --
 
 CREATE TABLE `avaliacoes` (
@@ -57,7 +57,7 @@ CREATE TABLE `avaliacoes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Extraindo dados da tabela `avaliacoes`
+-- Despejando dados para a tabela `avaliacoes`
 --
 
 INSERT INTO `avaliacoes` (`id`, `nome`, `avaliacao`, `imagem`) VALUES
@@ -68,7 +68,7 @@ INSERT INTO `avaliacoes` (`id`, `nome`, `avaliacao`, `imagem`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `blocos`
+-- Estrutura para tabela `blocos`
 --
 
 CREATE TABLE `blocos` (
@@ -76,11 +76,11 @@ CREATE TABLE `blocos` (
   `titulo` varchar(120) NOT NULL,
   `resumo` text NOT NULL,
   `descricao` text NOT NULL,
-  `imagem` varchar(120) NOT NULL
+  `imagem` varchar(120) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Extraindo dados da tabela `blocos`
+-- Despejando dados para a tabela `blocos`
 --
 
 INSERT INTO `blocos` (`id`, `titulo`, `resumo`, `descricao`, `imagem`) VALUES
@@ -92,12 +92,15 @@ INSERT INTO `blocos` (`id`, `titulo`, `resumo`, `descricao`, `imagem`) VALUES
 (7, 'Quem somos - Material didático ', 'Material didático', 'Outro de nossos maiores cuidados é com a preparação do material didático e conteúdo a ser passado para nossos alunos. Uma grade de aulas preparadas durante mais de 10 anos para que aja total entendimento do conteúdo proposto.', ''),
 (8, 'Quem somos - Melhor custo benefício', 'Melhor custo benefício do mercado', 'Um ensino de qualidade não tem preço, mas aqui na EFV você encontra ótimos valores assim como as melhores condições de pagamento. Você adquire uma nova profissão se qualifica e paga um valor justo e confortável.', ''),
 (9, 'Quem somos - Empregabilidade garantida', 'Empregabilidade garantida', 'Você será totalmente preparado para o mercado de trabalho, estando apto a exercer as funções a que seu curso designou imediatamente, você estará vivenciado e habituado as rotinas por profissionais que exercem as funções há mais de uma década.', ''),
-(10, 'Rodapé - Texto de resumo', 'Há mais de 20 anos preparando profissionais para o mercado de trabalho em vigilância e segurança. Com mais de 5.000 alunos formados a EFV é líder em preparação de alunos no Nordeste Brasileiro.', 'Há mais de 20 anos preparando profissionais para o mercado de trabalho em vigilância e segurança. Com mais de 5.000 alunos formados a EFV é líder em preparação de alunos no Nordeste Brasileiro.', '');
+(10, 'Rodapé - Texto de resumo', 'Há mais de 20 anos preparando profissionais para o mercado de trabalho em vigilância e segurança. Com mais de 5.000 alunos formados a EFV é líder em preparação de alunos no Nordeste Brasileiro.', 'Há mais de 20 anos preparando profissionais para o mercado de trabalho em vigilância e segurança. Com mais de 5.000 alunos formados a EFV é líder em preparação de alunos no Nordeste Brasileiro.', ''),
+(11, 'Home - Vídeo', 'Vídeo institucional', 'Conheça mais sobre a EFV', NULL),
+(12, 'Home - Vídeo link ', 'wgRYWJXocpM', 'wgRYWJXocpM', NULL),
+(13, 'Home - Topo', 'Há 26 anos', 'realizando sonhos e formando profissionais competentes', NULL);
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `certificados`
+-- Estrutura para tabela `certificados`
 --
 
 CREATE TABLE `certificados` (
@@ -107,43 +110,48 @@ CREATE TABLE `certificados` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Extraindo dados da tabela `certificados`
+-- Despejando dados para a tabela `certificados`
 --
 
 INSERT INTO `certificados` (`id`, `aluno`, `arquivo`) VALUES
-(3, 3, '1609944995.pdf');
+(3, 2, '1609944995.pdf'),
+(4, 2, '1609989641.pdf');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `cursos`
+-- Estrutura para tabela `cursos`
 --
 
 CREATE TABLE `cursos` (
   `id` int(10) UNSIGNED NOT NULL,
   `titulo` varchar(120) DEFAULT NULL,
-  `resumo` text DEFAULT NULL,
-  `descricao` text DEFAULT NULL,
+  `resumo` text DEFAULT NULL COMMENT 'objetivo',
+  `descricao` text DEFAULT NULL COMMENT 'programa',
+  `valores` text DEFAULT NULL,
+  `documentosnecessarios` text DEFAULT NULL,
+  `metodologia` text DEFAULT NULL,
+  `avaliacao` text DEFAULT NULL,
   `inicioproximaturma` date DEFAULT NULL,
-  `informacoesproximaturma` varchar(120) DEFAULT NULL,
+  `informacoesproximaturma` varchar(300) DEFAULT NULL,
   `imagem` varchar(100) DEFAULT NULL,
-  `datainclusao` date DEFAULT current_timestamp()
+  `datainclusao` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Extraindo dados da tabela `cursos`
+-- Despejando dados para a tabela `cursos`
 --
 
-INSERT INTO `cursos` (`id`, `titulo`, `resumo`, `descricao`, `inicioproximaturma`, `informacoesproximaturma`, `imagem`, `datainclusao`) VALUES
-(2, 'Curso de formação de vigilantes', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys ', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', NULL, NULL, '1609884726.jpg', '2021-01-05'),
-(3, 'Extensão em transporte de valores', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', NULL, NULL, '1609884794.jpg', '2021-01-05'),
-(4, 'Extensão em escolta armada', 'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested', 'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.', NULL, NULL, '1609884863.jpg', '2021-01-05'),
-(5, 'Extensão em segurança pessoal privada', 'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. ', 'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.', NULL, NULL, '1609884918.jpg', '2021-01-05');
+INSERT INTO `cursos` (`id`, `titulo`, `resumo`, `descricao`, `valores`, `documentosnecessarios`, `metodologia`, `avaliacao`, `inicioproximaturma`, `informacoesproximaturma`, `imagem`, `datainclusao`) VALUES
+(2, 'Curso de formação de vigilantes', 'Dotar o participante de conhecimentos e habilidades que o capacite para o exercício da profissão de vigilante, incluídas aí as atividades relativas a segurança física de estabelecimentos industriais e comerciais, adestrando-o para o manuseio de armamento e o emprego de defesa pessoal.\r\n', 'Grade Curricular<br/>\r\nA) Disciplinas Curriculares........................174 h/a<br/>\r\nB) Verificação de Aprendizagem.....................24 h/a<br/>\r\nC) Abertura de Curso...............................2 h/a<br/>\r\n<br/><br/>\r\nTOTAL..............................................200 h/a\r\n<br/><br/>\r\n\r\n1 - Noções de Segurança Privada - 8 horas/aula<br/>\r\n2 - Legislação Aplicada e Direitos Humanos - 20 horas/aula<br/>\r\n3 - Relações Humanas no Trabalho - 10 horas/aula<br/>\r\n4 - Sistema de Segurança Pública e Crime Organizado - 10 horas/aula<br/>\r\n5 - Prevenção e Combate a Incêndio - 6 horas/aula<br/>\r\n6 - Primeiros Socorros - 6 horas/aula<br/>\r\n7 - Educação Física - 12 horas/aula<br/>\r\n8 - Defesa Pessoal - 20 horas/aula<br/>\r\n9 - Armamento e Tiro - 24 horas/aula<br/>\r\n10- Vigilancia - 14 horas/aula<br/>\r\n11- Radiocomunicação - 10 horas/aula<br/>\r\n12- Noções de Segurança Eletrônica - 10 horas/aula<br/>\r\n13- Noções de Criminalística e Técnicas de Entrevista Prévia - 8 horas/aula<br/>\r\n14- uso Progressivo da Força - 8 horas/aula<br/>\r\n15- Gerenciamento de Crises - 8 horas/aula<br/>\r\n<br/>\r\nTotal - 200 horas/aula', 'Consulte nossos preços e promoções', 'Apresentar cópia simples dos documentos ou os ORIGINAIS, para que a EFV tire xerox e providencie a NECESSÁRIA conferência. Nesse caso, será cobrado R$0,20 por face de cada documento xerocopiado:\r\n<br/><br/>\r\n• Carteira de Identidade ( mínimo 21 anos )<br/>\r\n• CPF<br/>\r\n• Título de Eleitor<br/>\r\n• Carteira de Reservista<br/>\r\n• Histórico Escolar Autenticado ou Declaração Escolar original - mínimo quarta série do primeiro grau<br/>\r\n• CTPS - Carteira de Trabalho<br/>\r\n• Exame médico e Exame Psicotécnico<br/>\r\n• Atestado de Antecedentes Criminais<br/>\r\n• Comprovante de Residência (com CEP)- conta de luz, conta de TV a cabo, telefone ou correspondência bancária de preferência em nome do(a) aluno(a) ou dos pais.<br/>\r\n• Quitação da Justiça Eleitoral<br/>\r\n• Certidões negativadas', 'Será ministrado de conformidade com o estabelecido na Portaria 3233/2012 do Departamento de Polícia Federal. O curso é aplicado em uma única fase, visando o preparo profissional do aluno através de atividades práticas e simuladas, trazendo-o o mais próximo possível da realidade nas mais diversas situações em que devam ser aplicadas as regras e medidas de segurança.', 'Ao final do curso será realizada uma única avaliação de aprendizagem, por matéria, sendo considerado aprovado o aluno que obtiver um mínimo de 6 (seis) pontos num máximo de 10 (dez) pontos. A avaliação de aprendizagem das matérias \"Adestramento Físico\" e Armamento e Tiro será realizada de forma prática, enquanto que as demais constarão de provas teóricas do tipo objetivo.\r\n', '2021-01-08', 'Aulas aos sábados das 12h as 18h', '1609990494.jpg', '2021-01-05'),
+(3, 'Extensão em transporte de valores', 'Dotar o aluno de conhecimentos, técnicas, habilidades e atitudes que o mantenham capacitado para o exercício da atividade especializada de Transporte de Valores.\r\n', 'PROGRAMA E CARGA HORÁRIA<br/><br/>\r\n\r\nLegislação Aplicada - 05 horas/aula<br/>\r\nTransporte de Valores - 10 horas/aula<br/>\r\nResolução das Situações de Emergências - 10 horas/aula<br/>\r\nArmamento e Tiro - 18 horas/aula<br/>\r\nVerificação de Aprendizagem - 07 horas/aula<br/>\r\n<br/>\r\nTotal: 50 horas/aula', 'Consulte nossos preços e promoções', 'Apresentar cópia simples dos documentos ou os ORIGINAIS, para que a EFV tire xerox e providencie a NECESSÁRIA conferência. Nesse caso, será cobrado R$0,20 por face de cada documento xerocopiado:<br/><br/>\r\n\r\n• Carteira de Identidade ( mínimo 21 anos )<br/>\r\n• CPF<br/>\r\n• Título de Eleitor<br/>\r\n• Carteira de Reservista<br/>\r\n• Certificado do Curso de Formação de Vigilantes<br/>\r\n• CTPS - Carteira de Trabalho<br/>\r\n• Exame médico e Exame Psicotécnico<br/>\r\n• Atestado de Antecedentes Criminais<br/>\r\n• Comprovante de Residência (com CEP) - conta de luz, conta de TV a cabo, telefone ou correspondência bancária de preferência em nome do(a) aluno(a) ou dos pais.<br/>\r\n• Quitação da Justiça Eleitoral<br/>\r\n• Certidões negativadas.', 'Será ministrado em conformidade ao que estabelece o Currículo Oficial da Portaria 3233/12 do Ministério da Justiça, aplicado em um a única fase, através de atividades práticas e simuladas, utilizando-se os recursos didáticos e equipamentos necessários à instrução tais como salas de aula equipadas com retro projetores e quadro negro/branco, veículo convencional, carabina cal. 12 tipo Pump Action com coronha curta ou empunhadura tipo pistola choque cilíndrico e Pistola calibre .380.', 'Ao final do curso será realizada uma única avaliação de aprendizagem, por matéria, sendo considerado aprovado o aluno que obtiver um mínimo de 6 (seis) pontos num máximo de 10 (dez) pontos.\r\n', '2021-01-09', 'Aulas aos sábados das 12h as 18h', '1609990579.jpg', '2021-01-05'),
+(4, 'Extensão em escolta armada', 'Dotar o aluno de conhecimentos que o capacite ao desempenho das atribuições de prover a segurança na escolta armada, adotando medidas preventivas e repressivas ante possíveis ataques.\r\n', 'PROGRAMA E CARGA HORÁRIA<br/><br/>\r\n\r\nLegislação Aplicada - 05 horas/aula<br/>\r\nEscolta Armada - 10 horas/aula<br/>\r\nResolução das Situações de Emergências - 10 horas/aula<br/>\r\nArmamento e Tiro - 18 horas/aula<br/>\r\nVerificação de Aprendizagem - 07 horas/aula<br/><br/>\r\n\r\nTotal: 50 horas/aula', 'Consulte nossos preços e promoções', 'Apresentar cópia simples dos documentos ou os ORIGINAIS, para que a EFV tire xerox e providencie a NECESSÁRIA conferência. Nesse caso, será cobrado R$0,20 por face de cada documento xerocopiado:<br/><br/>\r\n\r\n• Carteira de Identidade ( mínimo 21 anos )<br/>\r\n• CPF<br/>\r\n• Título de Eleitor<br/>\r\n• Carteira de Reservista<br/>\r\n• Certificado do Curso de Formação de Vigilantes<br/>\r\n• CTPS - Carteira de Trabalho<br/>\r\n• Exame médico e Exame Psicotécnico<br/>\r\n• Atestado de Antecedentes Criminais<br/>\r\n• Comprovante de Residência (com CEP) - conta de luz, conta de TV a cabo, telefone ou correspondência bancária de preferência em nome do(a) aluno(a) ou dos pais.<br/>\r\n• Quitação da Justiça Eleitoral<br/>\r\n• Certidões negativadas.', 'Será ministrado em conformidade ao que estabelece o Currículo Oficial da Portaria 3233/12 do Ministério da Justiça, aplicado em um a única fase, através de atividades práticas e simuladas, utilizando-se os recursos didáticos e equipamentos necessários à instrução tais como salas de aula equipadas com retro projetores e quadro negro/branco, veículo convencional, carabina cal. 12 tipo Pump Action com coronha curta ou empunhadura tipo pistola  choque cilíndrico e Pistola calibre .380.\r\n', 'Ao final do curso será realizada uma única avaliação de aprendizagem, por matéria, sendo considerado aprovado o aluno que obtiver um mínimo de 6 (seis) pontos num máximo de 10 (dez) pontos.', '2021-01-22', 'Aulas aos sábados das 12h as 18h', '1609990644.jpg', '2021-01-05'),
+(5, 'Extensão em segurança pessoal privada', 'Dotar o aluno de conhecimentos ,técnicas , habilidades e atitudes que o capacitem para o exercício da atividade de segurança pessoal privada, adotando medidas preventivas e repressivas ante possíveis ataques às pessoas que protege .\r\n', 'Grade Curricular<br/><br/>\r\nA) Disciplinas Curriculares....................46 h/a<br/>\r\nB) Verificação de Aprendizagem.................4 h/a<br/><br/>\r\n\r\nTOTAL..........................................50 h/a<br/><br/>\r\n\r\n\r\n1- Legislação Aplicada - 4 hora/aula<br/>\r\n2- Segurança Pessoal Privada - 12 horas/aula<br/>\r\n3- Resolução das Situações de Emergência - 8 horas/aula<br/>\r\n4- Armamento E Tiro - 12 horas/aula<br/>\r\n5- Defesa Pessoal - 10 horas/aula<br/>\r\n<br/>\r\n\r\nTOTAL - 50 horas/aula', 'Consulte nossos preços e promoções', 'Apresentar cópia simples dos documentos ou os ORIGINAIS, para que a EFV tire xerox e providencie a NECESSÁRIA conferência. Nesse caso, será cobrado R$0,20 por face de cada documento xerocopiado:<br/><br/>\r\n\r\n• Carteira de Identidade ( mínimo 21 anos )<br/>\r\n• CPF<br/>\r\n• Título de Eleitor<br/>\r\n• Carteira de Reservista<br/>\r\n• Certificado do Curso de Formação de Vigilantes<br/>\r\n• CTPS - Carteira de Trabalho<br/>\r\n• Exame médico e Exame Psicotécnico<br/>\r\n• Atestado de Antecedentes Criminais<br/>\r\n• Comprovante de Residência (com CEP) - conta de luz, conta de TV a cabo, telefone ou correspondência bancária de preferência em nome do(a) aluno(a) ou dos pais.<br/>\r\n• Quitação da Justiça Eleitoral<br/>\r\n• Certidões negativadas.', 'Será ministrado de conformidade com o estabelecido na Portaria 3233/12 do Ministério da Justiça. O curso é aplicado em uma única fase, visando o preparo profissional do aluno através de atividades práticas e simuladas, trazendo-o o mais próximo possível da realidade nas mais diversas situações em que devam ser aplicadas as regras e medidas de segurança.', 'Ao final do curso será realizada uma única avaliação de aprendizagem(prova objetiva), por matéria, sendo considerado aprovado o aluno que obtiver um mínimo de 6 (seis) pontos num máximo de 10 (dez) pontos. A avaliação de aprendizagem da matéria Armamento e Tiro será realizada de forma prática.', '2021-01-26', 'Aulas aos sábados das 12h as 18h', '1609990729.jpg', '2021-01-05');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `galeriafotos`
+-- Estrutura para tabela `galeriafotos`
 --
 
 CREATE TABLE `galeriafotos` (
@@ -152,7 +160,7 @@ CREATE TABLE `galeriafotos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Extraindo dados da tabela `galeriafotos`
+-- Despejando dados para a tabela `galeriafotos`
 --
 
 INSERT INTO `galeriafotos` (`id`, `imagem`) VALUES
@@ -166,7 +174,7 @@ INSERT INTO `galeriafotos` (`id`, `imagem`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `galeriavideos`
+-- Estrutura para tabela `galeriavideos`
 --
 
 CREATE TABLE `galeriavideos` (
@@ -175,7 +183,7 @@ CREATE TABLE `galeriavideos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Extraindo dados da tabela `galeriavideos`
+-- Despejando dados para a tabela `galeriavideos`
 --
 
 INSERT INTO `galeriavideos` (`id`, `video`) VALUES
@@ -185,7 +193,7 @@ INSERT INTO `galeriavideos` (`id`, `video`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `informacoes`
+-- Estrutura para tabela `informacoes`
 --
 
 CREATE TABLE `informacoes` (
@@ -207,7 +215,7 @@ CREATE TABLE `informacoes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Extraindo dados da tabela `informacoes`
+-- Despejando dados para a tabela `informacoes`
 --
 
 INSERT INTO `informacoes` (`id`, `cep`, `logradouro`, `numero`, `complemento`, `bairro`, `cidade`, `estado`, `email`, `telefone1`, `telefone2`, `telefone3`, `telefone4`, `facebook`, `instagram`) VALUES
@@ -216,7 +224,7 @@ INSERT INTO `informacoes` (`id`, `cep`, `logradouro`, `numero`, `complemento`, `
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `publicacoes`
+-- Estrutura para tabela `publicacoes`
 --
 
 CREATE TABLE `publicacoes` (
@@ -225,11 +233,11 @@ CREATE TABLE `publicacoes` (
   `resumo` text DEFAULT NULL,
   `descricao` text DEFAULT NULL,
   `imagem` varchar(80) DEFAULT NULL,
-  `datapublicacao` date DEFAULT current_timestamp()
+  `datapublicacao` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Extraindo dados da tabela `publicacoes`
+-- Despejando dados para a tabela `publicacoes`
 --
 
 INSERT INTO `publicacoes` (`id`, `titulo`, `resumo`, `descricao`, `imagem`, `datapublicacao`) VALUES
@@ -241,7 +249,7 @@ INSERT INTO `publicacoes` (`id`, `titulo`, `resumo`, `descricao`, `imagem`, `dat
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `seo`
+-- Estrutura para tabela `seo`
 --
 
 CREATE TABLE `seo` (
@@ -252,7 +260,7 @@ CREATE TABLE `seo` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Extraindo dados da tabela `seo`
+-- Despejando dados para a tabela `seo`
 --
 
 INSERT INTO `seo` (`id`, `analytics`, `description`, `keywords`) VALUES
@@ -261,7 +269,7 @@ INSERT INTO `seo` (`id`, `analytics`, `description`, `keywords`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `usuarios`
+-- Estrutura para tabela `usuarios`
 --
 
 CREATE TABLE `usuarios` (
@@ -272,7 +280,7 @@ CREATE TABLE `usuarios` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Extraindo dados da tabela `usuarios`
+-- Despejando dados para a tabela `usuarios`
 --
 
 INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`) VALUES
@@ -285,73 +293,73 @@ INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`) VALUES
 --
 
 --
--- Índices para tabela `alunos`
+-- Índices de tabela `alunos`
 --
 ALTER TABLE `alunos`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices para tabela `avaliacoes`
+-- Índices de tabela `avaliacoes`
 --
 ALTER TABLE `avaliacoes`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices para tabela `blocos`
+-- Índices de tabela `blocos`
 --
 ALTER TABLE `blocos`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices para tabela `certificados`
+-- Índices de tabela `certificados`
 --
 ALTER TABLE `certificados`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices para tabela `cursos`
+-- Índices de tabela `cursos`
 --
 ALTER TABLE `cursos`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices para tabela `galeriafotos`
+-- Índices de tabela `galeriafotos`
 --
 ALTER TABLE `galeriafotos`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices para tabela `galeriavideos`
+-- Índices de tabela `galeriavideos`
 --
 ALTER TABLE `galeriavideos`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices para tabela `informacoes`
+-- Índices de tabela `informacoes`
 --
 ALTER TABLE `informacoes`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices para tabela `publicacoes`
+-- Índices de tabela `publicacoes`
 --
 ALTER TABLE `publicacoes`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices para tabela `seo`
+-- Índices de tabela `seo`
 --
 ALTER TABLE `seo`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices para tabela `usuarios`
+-- Índices de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT de tabelas despejadas
+-- AUTO_INCREMENT para tabelas despejadas
 --
 
 --
@@ -370,13 +378,13 @@ ALTER TABLE `avaliacoes`
 -- AUTO_INCREMENT de tabela `blocos`
 --
 ALTER TABLE `blocos`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de tabela `certificados`
 --
 ALTER TABLE `certificados`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `cursos`

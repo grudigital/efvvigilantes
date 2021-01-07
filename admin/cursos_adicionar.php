@@ -59,16 +59,45 @@ if ($_SESSION['usuarioNome'] == '') {
                                     </div>
 
                                     <div class="form-group row">
-                                        <label for="example-text-input" class="col-sm-2 col-form-label">Resumo</label>
+                                        <label for="example-text-input" class="col-sm-2 col-form-label">Resumo / Objetivo</label>
                                         <div class="col-sm-10">
                                             <textarea class="form-control" name="resumo"></textarea>
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
-                                        <label for="example-text-input" class="col-sm-2 col-form-label">Descrição</label>
+                                        <label for="example-text-input" class="col-sm-2 col-form-label">Descrição / Programa</label>
                                         <div class="col-sm-10">
                                             <textarea class="form-control" name="descricao"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col-sm-2 col-form-label">Valores</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" name="valores" type="text" placeholder="Valores"
+                                                   id="example-text-input">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col-sm-2 col-form-label">Documentos necessários</label>
+                                        <div class="col-sm-10">
+                                            <textarea class="form-control" name="documentosnecessarios"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col-sm-2 col-form-label">Metodologia</label>
+                                        <div class="col-sm-10">
+                                            <textarea class="form-control" name="metodologia"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="example-text-input" class="col-sm-2 col-form-label">Avaliação</label>
+                                        <div class="col-sm-10">
+                                            <textarea class="form-control" name="avaliacao"></textarea>
                                         </div>
                                     </div>
 

@@ -37,7 +37,7 @@
             <div class="col-md-9">
 
                 <div id="message-contact"></div>
-                <form method="post" action="assets/contact.php" id="contactform">
+                <form method="post" action="functions/enviarcontato.php">
                     <div class="row">
                         <div class="col-md-4 col-sm-4">
                             <div class="form-group">
@@ -64,7 +64,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label>Mensagem</label>
-                                <textarea rows="5" id="message_contact" name="message_contact" class="form-control"
+                                <textarea rows="5" id="message_contact" name="mensagem" class="form-control"
                                           style="height:100px;"></textarea>
                             </div>
                         </div>

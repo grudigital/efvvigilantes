@@ -7,12 +7,12 @@
                 </div>
                 <div class="col-sm-8">
                     <ul id="top_links">
-                        <li class="hidden-xs"><a target="_blank" href="consulta_certificados.php">Consulta de certificados</a></li>
+                        <li class="hidden-xs"><a href="consulta_certificados.php">Consulta de certificados</a></li>
                     </ul>
                 </div>
-            </div><!-- End row -->
-        </div><!-- End container-->
-    </div><!-- End top line-->
+            </div>
+        </div>
+    </div>
 
     <div class="container">
         <div class="row">

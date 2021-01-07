@@ -72,16 +72,45 @@ if ($_SESSION['usuarioNome'] == '') {
                                         echo "</div>";
 
                                         echo "<div class='form-group row'>";
-                                        echo "<label for='example-text-input' class='col-sm-2 col-form-label'>Resumo</label>";
+                                        echo "<label for='example-text-input' class='col-sm-2 col-form-label'>Resumo / Objetivo</label>";
                                         echo "<div class='col-sm-10'>";
                                         echo "<textarea class='form-control' name='resumo'>$row[resumo]</textarea>";
                                         echo "</div>";
                                         echo "</div>";
 
                                         echo "<div class='form-group row'>";
-                                        echo "<label for='example-text-input' class='col-sm-2 col-form-label'>Descrição</label>";
+                                        echo "<label for='example-text-input' class='col-sm-2 col-form-label'>Descrição / Programa</label>";
                                         echo "<div class='col-sm-10'>";
                                         echo "<textarea class='form-control' name='descricao'>$row[descricao]</textarea>";
+                                        echo "</div>";
+                                        echo "</div>";
+
+                                        echo "<div class='form-group row'>";
+                                        echo "<label for='example-text-input' class='col-sm-2 col-form-label'>Valores</label>";
+                                        echo "<div class='col-sm-10'>";
+                                        echo "<input class='form-control' name='valores' type='text' value='$row[valores]'
+                                                   id='example-text-input'>";
+                                        echo "</div>";
+                                        echo "</div>";
+
+                                        echo "<div class='form-group row'>";
+                                        echo "<label for='example-text-input' class='col-sm-2 col-form-label'>Documentos necessários</label>";
+                                        echo "<div class='col-sm-10'>";
+                                        echo "<textarea class='form-control' name='documentosnecessarios'>$row[documentosnecessarios]</textarea>";
+                                        echo "</div>";
+                                        echo "</div>";
+
+                                        echo "<div class='form-group row'>";
+                                        echo "<label for='example-text-input' class='col-sm-2 col-form-label'>Metodologia</label>";
+                                        echo "<div class='col-sm-10'>";
+                                        echo "<textarea class='form-control' name='metodologia'>$row[metodologia]</textarea>";
+                                        echo "</div>";
+                                        echo "</div>";
+
+                                        echo "<div class='form-group row'>";
+                                        echo "<label for='example-text-input' class='col-sm-2 col-form-label'>Avaliação</label>";
+                                        echo "<div class='col-sm-10'>";
+                                        echo "<textarea class='form-control' name='avaliacao'>$row[avaliacao]</textarea>";
                                         echo "</div>";
                                         echo "</div>";
 

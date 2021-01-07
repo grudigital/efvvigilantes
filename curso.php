@@ -19,142 +19,100 @@
 <!-- Header================================================== -->
 <?php include 'includes/header.php' ?>
 
-
-<section class="parallax_window_in short" data-parallax="scroll" data-image-src="img/subheader_in_1.jpg" data-natural-width="1400" data-natural-height="350">
+<section class="parallax_window_in short" data-parallax="scroll" data-image-src="img/topo-noticias.jpg"
+         data-natural-width="1400" data-natural-height="350">
     <div id="sub_content_in">
         <div class="container">
-            <h1>Service page 2</h1>
-            <p>"Usu habeo equidem sanctus no ex melius"</p>
+            <h1>Cursos</h1>
+            <p>Conheça todos nossos cursos de formação e atualização</p>
         </div>
     </div>
-</section><!-- End section -->
+</section>
 
 <main>
     <div class="container margin_60_35">
         <div class="row">
-
             <div class="col-md-9">
-                <img src="img/service_1.jpg" alt="" class="img-responsive border">
-                <h3>Air condition systems</h3>
-                <p>Ad qui consulatu scripserit comprehensam. Eum <strong>purto epicurei cotidieque</strong> at, ius luptatum invidunt no, vim at sint pertinacia repudiandae. Ad cum dicant laboramus delicatissimi, ex has nonumes explicari prodesset, brute tincidunt conclusionemque no has. Sit ullum latine ei. Ius id adhuc iriure torquatos. Justo prompta senserit eos cu, omnesque posidonium liberavisse pri in. Malorum fabulas elaboraret mea in, vel ut harum tacimates posidonium.</p>
+                <div class="post nopadding">
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <img src="img/service_2.jpg" alt="" class="img-responsive border">
-                        <h3>Installation</h3>
-                        <p>Ad sed apeirian senserit gloriatur, eu iusto ubique impetus quo. Sea no essent cotidieque reformidans, sea an <strong>persius moderatius</strong> comprehensam, at nam tamquam alterum definiebas. Nibh facilisi mei eu, essent virtute ius id. Ne ullum consequat sit, dolorum deserunt expetendis no eam.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="img/service_3.jpg" alt="" class="img-responsive border">
-                        <h3>Mantainance</h3>
-                        <p>Ad sed apeirian senserit gloriatur, eu iusto ubique impetus quo. Sea no <strong>essent cotidieque</strong> reformidans, sea an persius moderatius comprehensam, at nam tamquam alterum definiebas. Nibh facilisi mei eu, essent virtute ius id. Ne ullum consequat sit, dolorum deserunt expetendis no eam.</p>
-                    </div>
+                    <?php
+                    require("admin/connections/conn.php");
+                    $pegaid = (int)$_GET['id'];
+                    $sql = "select * FROM cursos where id = '$pegaid'";
+                    $result = mysqli_query($conn, $sql);
+                    while ($row = mysqli_fetch_assoc($result)) {
+
+                        echo "<h2 style='margin-bottom: 40px'>$row[titulo]</h2>";
+
+                        echo "<div style='font-weight: bold' class='alert alert-danger' role='alert'>Próxima turma: $row[inicioproximaturma] <br/>$row[informacoesproximaturma]</div>";
+
+                        if ($row['valores'] != null) {
+                            echo "<p style='width: 100%; background-color:#647631; color:#fff; font-size:20px; padding-top:5px; padding-left:5px; border-radius: 0px 0px 10px 0px; height: 40px'>Valores</p>";
+                            echo "<p>$row[valores]</p>";
+                        }
+
+                        if ($row['documentosnecessarios'] != null) {
+                            echo "<p style='width: 100%; background-color:#647631; color:#fff; font-size:20px; padding-top:5px; padding-left:5px; border-radius: 0px 0px 10px 0px; height: 40px'>Documentos necessários</p>";
+                            echo "<p>$row[documentosnecessarios]</p>";
+                        }
+
+                        if ($row['resumo'] != null) {
+                            echo "<p style='width: 100%; background-color:#647631; color:#fff; font-size:20px; padding-top:5px; padding-left:5px; border-radius: 0px 0px 10px 0px; height: 40px'>Objetivos</p>";
+                            echo "<p>$row[resumo]</p>";
+                        }
+
+                        if ($row['descricao'] != null) {
+                            echo "<p style='width: 100%; background-color:#647631; color:#fff; font-size:20px; padding-top:5px; padding-left:5px; border-radius: 0px 0px 10px 0px; height: 40px'>Programa / Descrição</p>";
+                            echo "<p>$row[descricao]</p>";
+                        }
+
+                        if ($row['metodologia'] != null) {
+                            echo "<p style='width: 100%; background-color:#647631; color:#fff; font-size:20px; padding-top:5px; padding-left:5px; border-radius: 0px 0px 10px 0px; height: 40px'>Metodologia</p>";
+                            echo "<p>$row[metodologia]</p>";
+                        }
+
+                        if ($row['avaliacao'] != null) {
+                            echo "<p style='width: 100%; background-color:#647631; color:#fff; font-size:20px; padding-top:5px; padding-left:5px; border-radius: 0px 0px 10px 0px; height: 40px'>Avaliação</p>";
+                            echo "<p>$row[avaliacao]</p>";
+                        }
+
+
+                    }
+                    ?>
+
                 </div>
-                <!-- End row -->
 
-                <hr>
 
-                <div class="row">
-                    <div class="col-md-6">
-                        <ul class="feat">
-                            <li>
-                                <img src="img/icon_service_1.png" alt="" width="50" height="54" data-retina="true">
-                                <h4>Fast Callback and response</h4>
-                                <p>Nibh facilisi mei eu, essent virtute ius id. Ne ullum consequat sit, dolorum deserunt expetendis no eam.</p>
-                            </li>
-                            <li>
-                                <img src="img/icon_service_2.png" alt="" width="50" height="50" data-retina="true">
-                                <h4>Dedicate Help center</h4>
-                                <p>Nibh facilisi mei eu, essent virtute ius id. Ne ullum consequat sit, dolorum deserunt expetendis no eam.</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="feat">
-                            <li>
-                                <img src="img/icon_service_3.png" alt="" width="50" height="56" data-retina="true">
-                                <h4>Professional diagnose</h4>
-                                <p>Nibh facilisi mei eu, essent virtute ius id. Ne ullum consequat sit, dolorum deserunt expetendis no eam.</p>
-                            </li>
-                            <li>
-                                <img src="img/icon_service_4.png" alt="" width="50" height="50" data-retina="true">
-                                <h4>Transport</h4>
-                                <p>Nibh facilisi mei eu, essent virtute ius id. Ne ullum consequat sit, dolorum deserunt expetendis no eam.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div><!-- End row -->
-
-                <hr>
-                <h3>Our indicative prices</h3>
-                <table class="table table-striped">
-                    <thead>
-                    <tr>
-                        <th>type</th>
-                        <th>2 Men</th>
-                        <th>3 Men</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Wiring and installation</td>
-                        <td>$50 /hr</td>
-                        <td>$90 /hr</td>
-                    </tr>
-                    <tr>
-                        <td>Mantainance</td>
-                        <td>$150 /hr</td>
-                        <td>$250 /hr</td>
-                    </tr>
-                    <tr>
-                        <td>Diagnose</td>
-                        <td>$350 /hr</td>
-                        <td>$450 /hr</td>
-                    </tr>
-                    </tbody>
-                </table>
-
-            </div><!-- End col-md-9 -->
+            </div>
 
             <div class="col-md-3">
-                <div class="box_style_1">
-                    <ul id="cat_nav">
-                        <li><a href="service_layout_1.html">Mantainance</a></li>
-                        <li><a href="service_layout_1.html">Security sistems</a></li>
-                        <li><a href="service_layout_1.html">Wiring and installation</a></li>
-                        <li><a href="service_layout_1.html">Certifications</a></li>
-                    </ul>
-                    <hr>
-                    <h5>Did you find what you need?</h5>
-                    <p class="nopadding">
-                        Ad sed apeirian senserit gloriatur, eu iusto ubique impetus quo.<br>
-                        <a href="contacts.html" class="link_normal">Contact us</a>
-                    </p>
-                </div><!-- End Box_style_1 -->
 
-                <div class="quote_banner">
-                    <a href="quotation.html">Need a quotation?</a>
+                <div class="widget">
+                    <h4>Próximos cursos</h4>
+                    <ul class="recent_post">
+
+                        <?php
+                        require("admin/connections/conn.php");
+                        $sql = "select * FROM cursos order by inicioproximaturma asc limit 5";
+                        $result = mysqli_query($conn, $sql);
+                        while ($row = mysqli_fetch_assoc($result)) {
+                            echo "<li>";
+                            echo "<i class='icon-calendar-empty'></i> $row[inicioproximaturma]";
+                            echo "<div><a href='curso.php?id=$row[id]'>$row[titulo] </a></div>";
+                            echo "</li>";
+                        }
+                        ?>
+                    </ul>
                 </div>
 
-                <div class="box_style_2">
-                    <h4><i class="icon_lightbulb_alt"></i> Security saving tips</h4>
-                    <ul>
-                        <li>Nec no eros probatus, consetetur theophrastus.</li>
-                        <li>Vis minimum sadipscing mediocritatem ex.</li>
-                        <li>Postulant urbanitas usu in, in eum omnis viderer invenire.</li>
-                        <li>Tritani salutatus constituto id nec, quo dico aperiri atomorum ex. </li>
-                        <li>Illum molestie pri ei, senserit indoctum dignissim vis an.</li>
-                        <li>Eum accusam assueverit in, summo essent eirmod mel ut.</li>
-                    </ul>
-                    <p>
-                        <a href="tips.html" class="link_normal">Read more</a>
-                    </p>
-                </div>
-            </div><!-- End col-md-3 -->
 
-        </div><!-- End row -->
-    </div><!-- End container -->
-</main><!-- End main -->
+            </div>
+
+        </div>
+        <img style="width: 100%; margin-top:40px" src="img/bannercursos.jpg" class='img-responsive'>
+
+    </div>
+</main>
 
 <?php include 'includes/footer.php' ?>
 
@@ -162,7 +120,7 @@
 <div id="toTop"></div><!-- Back to top button -->
 
 <!-- Common scripts -->
-<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/common_scripts_min.js"></script>
 <script src="js/functions.js"></script>
 
